@@ -1,0 +1,44 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    font-family: 'open sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-image: url(pemandangan.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-container{
+    width: 400px;
+    border: 4px solid lab(64.95% -3.9 65.5 / 0.838);
+    margin: 100px auto;
+    position: relative;
+    padding: 20px 10px;
+}
+
+.button-container{
+    text-align: right;
+    padding-top: 20px;
+}
+
+#tulisan{
+    color: rgb(16, 9, 20);
+}
+
+.button{
+    width: 100px;
+}
+
+.form-tittle{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+td{
+    padding-bottom: 8px;
+}
