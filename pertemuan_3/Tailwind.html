@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Instagram - Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-gray-900 text-white px-6 py-3">
+    <h1 class="text-lg font-semibold">MyInstagram</h1>
+  </nav>
+
+  <!-- Header Profil -->
+  <header class="container mx-auto p-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+      <!-- Foto Profil -->
+      <div class="flex justify-center md:justify-start">
+        <img src="imah.jpg" alt="Foto Profil"
+          class="w-32 h-32 rounded-full object-cover border" />
+      </div>
+
+      <!-- Info Profil -->
+      <div class="md:col-span-2 flex flex-col gap-4">
+        <!-- Username + Tombol -->
+        <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+          <h1 class="text-2xl font-bold">Mhdilh_</h1>
+          <div class="flex gap-2">
+            <button class="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 text-sm">Follow</button>
+            <button class="bg-gray-200 px-3 py-1 rounded hover:bg-gray-300 text-sm">Edit Profile</button>
+          </div>
+        </div>
+
+        <!-- Statistik -->
+        <div class="flex gap-8 text-sm">
+          <p><span class="font-bold">12</span> posts</p>
+          <p><span class="font-bold">400</span> followers</p>
+          <p><span class="font-bold">300</span> following</p>
+        </div>
+
+        <!-- Bio -->
+        <p class="text-gray-700 text-sm">berjalan, belajar, bertumbuh</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Feed Foto -->
+  <main class="container mx-auto px-6 pb-12">
+    <div  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <!-- Minimal 12 Foto -->
+      <img src="arter1.jpg" alt="Feed" class="w-full aspect-square object-cover rounded" />
+      <img src="arter2.jpg" alt="Feed" class="w-full aspect-square object-cover rounded" />
+      <img src="arter3.jpg" alt="Feed" class="w-full aspect-square object-cover rounded" />
+      <img src="arter4.jpg" alt="Feed" class="w-full aspect-square object-cover rounded" />
+      <img src="potostudio (3).jpg" alt="Feed" class="w-full aspect-square object-cover rounded" />
+      <img src="potostudio (2).JPG" alt="Feed" class="w-full aspect-square object-cover rounded" />
+      <img src="potostudio.jpg" alt="Feed" class="w-full aspect-square object-cover rounded" />
+      <img src="potostudio4.jpg" alt="Feed" class="w-full aspect-square object-cover rounded" />
+      <img src="gunung.jpg" alt="Feed" class="w-full aspect-square object-cover rounded" />
+      <img src="GUNUNG1.jpg" alt="Feed" class="w-full aspect-square object-cover rounded" />
+      <img src="GUNUNG2.jpg" alt="Feed" class="w-full aspect-square object-cover rounded" />
+      <img src="GUNUNG3.jpg" alt="Feed" class="w-full aspect-square object-cover rounded" />
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-4 border-t">
+    <div class="container mx-auto text-center text-gray-600 text-sm">
+      &copy; 2025 Profil Instagram - Tailwind Clone
+    </div>
+  </footer>
+
+</body>
+</html>
