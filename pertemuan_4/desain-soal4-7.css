@@ -1,0 +1,121 @@
+/* Gaya umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2e8b57, #155806);
+    text-align: center;
+    color: #240f06;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 30px 0;
+    color: #fff;
+}
+
+/* Menu utama */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #2e2e2e;
+    display: inline-block;
+    border-radius: 8px;
+    overflow: visible;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#menu ul li {
+    position: relative;
+    float: left;
+}
+
+#menu ul li a {
+    display: block;
+    padding: 12px 24px;
+    color: #fff;
+    text-decoration: none;
+    background: #2e2e2e;
+    transition: background 0.3s;
+}
+
+#menu ul li a:hover {
+    background: #4CAF50;
+}
+
+/* Submenu */
+#menu ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #3b3b3b;
+    padding: 0;
+    margin: 0;
+    min-width: 220px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+#menu ul ul li {
+    float: none;
+}
+
+#menu ul ul a {
+    padding: 12px;
+    display: block;
+    text-align: left;
+}
+
+#menu ul ul a:hover {
+    background: #4fc576;
+}
+
+/* Tampilkan submenu saat hover */
+#menu ul li:hover > ul {
+   visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Konten About */
+.content-section {
+    display: none;
+    padding: 20px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Muncul saat :target */
+.content-section:target {
+    display: block;
+}
+
+/* Efek gambar */
+.fade-img {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.8s ease-in-out;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+.content-section:target .fade-img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Animasi fadeIn */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
